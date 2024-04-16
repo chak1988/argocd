@@ -1,0 +1,7 @@
+# Dev Override Values for my Helm Chart
+
+container:
+  image: chak1988/php-app:webx
+
+replicaCount: 2
+
