@@ -10,12 +10,12 @@ spec:
     name     : in-cluster
     namespace: app2
   source:
-    path   : "HelmCharts/MyChart2"
+    path   : "HelmCharts/MyChart1"
     repoURL: "git@github.com:chak1988/argocd.git"
     targetRevision: HEAD
     helm:
       valueFiles:
-      - values_dev.yaml
+      - values_prod.yaml
       parameters:
       - name: "container.image"
         value: chak1988/php-app:version2
