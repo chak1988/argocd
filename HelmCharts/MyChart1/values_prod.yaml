@@ -4,3 +4,5 @@ container:
   image: chak1988/php-app:version3
 
 replicaCount: 2
+
+port: 80

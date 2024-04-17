@@ -5,3 +5,5 @@ container:
 
 replicaCount: 2
 
+port: 8888
+

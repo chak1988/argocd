@@ -4,3 +4,5 @@ container:
   image: httpd:latest
 
 replicaCount: 1
+
+port: 8888
