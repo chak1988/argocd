@@ -3,13 +3,13 @@ kind: Service
 metadata:
   name: {{ .Release.Name }}-service
   labels:
-    owner: DenisAstahov
+    owner: AntonChebanov
 spec:
   selector:
     project: {{ .Release.Name }}    # Selecting PODS with those Labels
   ports:
     - name      : {{ .Release.Name }}-listener
       protocol  : TCP
-      port      : 80  # Port on Load Balancer
+      port      : {{.Values.port}} # Port on Load Balancer
       targetPort: 80  # Port on POD
   type: LoadBalancer
