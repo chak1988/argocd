@@ -3,6 +3,6 @@
 container:
   image: chak1988/php-app:webx
 
-replicaCount: 2
+replicaCount: 1
 
 port: 8886

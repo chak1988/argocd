@@ -1,29 +1,28 @@
-## ArgoCD Applications for EKS Clusters
+## ArgoCD Applications for EKS Clusters or Test on Local Cluster
 
-Name of the folder represent name of the EKS Cluster (Except HelmCharts).
 
 ```
 │
 ├── HelmCharts             # All Helm Charts
-│   ├── ChartTest1
+│   ├── Chart1
 │   │   ├── Chart.yaml
 │   │   ├── templates
 │   │   ├── values_dev.yaml    # DEV Values
 │   │   ├── values_prod.yaml   # PROD Values
 │   │   └── values.yaml        # Default Values
-│   └── ChartTest2
+│   └── Chart22
 │       ├── Chart.yaml
 │       ├── templates
 │       ├── values_dev.yaml    # DEV Values
 │       ├── values_prod.yaml   # PROD Values
 │       └── values.yaml        # Default Values
 │   
-├── demo-dev                   # EKS Cluster name
+├── development-env                   # EKS Cluster name
 │   ├── applications
 │   │   ├── app1.yaml
 │   │   └── app2.yaml
 │   └── root.yaml              # Root ArgoCD Application
-└── demo-prod                  # EKS Cluster name
+└── production-env                  # EKS Cluster name
     ├── applications
     │   ├── app1.yaml
     │   └── app2.yaml
