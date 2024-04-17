@@ -10,7 +10,7 @@
 │   │   ├── values_dev.yaml    # DEV Values
 │   │   ├── values_prod.yaml   # PROD Values
 │   │   └── values.yaml        # Default Values
-│   └── Chart22
+│   └── Chart2
 │       ├── Chart.yaml
 │       ├── templates
 │       ├── values_dev.yaml    # DEV Values
